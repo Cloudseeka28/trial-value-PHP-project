@@ -1,0 +1,53 @@
+WARNING - 2023-07-03 10:36:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Frontend\Home::$validation is deprecated in APPPATH\Controllers\BaseController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-03 10:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-03 10:36:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Frontend\Home::$session is deprecated in APPPATH\Controllers\BaseController.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-03 10:36:42 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\user\htdocs\com-26jun\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\user\htdocs\com-26jun\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_compitetive', 3306, '', 0)
+#1 D:\user\htdocs\com-26jun\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\user\htdocs\com-26jun\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\user\htdocs\com-26jun\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\user\htdocs\com-26jun\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\user\htdocs\com-26jun\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\user\htdocs\com-26jun\app\Controllers\Frontend\Home.php(20): CodeIgniter\BaseModel->first()
+#7 D:\user\htdocs\com-26jun\system\CodeIgniter.php(934): App\Controllers\Frontend\Home->index()
+#8 D:\user\htdocs\com-26jun\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Home))
+#9 D:\user\htdocs\com-26jun\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\user\htdocs\com-26jun\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\user\htdocs\com-26jun\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\user\htdocs\com-26jun\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\user\htdocs\com-26jun\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\user\htdocs\com-26jun\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\user\htdocs\com-26jun\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\user\htdocs\com-26jun\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 D:\user\htdocs\com-26jun\app\Controllers\Frontend\Home.php(20): CodeIgniter\BaseModel->first()
+#6 D:\user\htdocs\com-26jun\system\CodeIgniter.php(934): App\Controllers\Frontend\Home->index()
+#7 D:\user\htdocs\com-26jun\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Home))
+#8 D:\user\htdocs\com-26jun\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\user\htdocs\com-26jun\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-03 10:36:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `homeus`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Frontend\Home.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Frontend\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Frontend\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

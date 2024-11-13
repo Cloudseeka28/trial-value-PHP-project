@@ -1,0 +1,157 @@
+INFO - 2023-07-21 03:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:43:31 --> CSRF token verified.
+INFO - 2023-07-21 03:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:43:32 --> CSRF token verified.
+INFO - 2023-07-21 03:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 03:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 04:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 06:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 07:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 08:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 08:29:57 --> CSRF token verified.
+INFO - 2023-07-21 08:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 08:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-21 10:40:11 --> mysqli_sql_exception: Column 'Therapeutic_Area' cannot be null in /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/BaseModel.php(781): CodeIgniter\Model->doInsert()
+#6 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(732): CodeIgniter\BaseModel->insert()
+#7 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/app/Controllers/Home.php(91): CodeIgniter\Model->insert()
+#8 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(934): App\Controllers\Home->save()
+#9 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-21 10:40:11 --> Column 'Therapeutic_Area' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(781): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Home.php(91): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->save()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 10:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-21 10:40:21 --> mysqli_sql_exception: Column 'Therapeutic_Area' cannot be null in /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/BaseModel.php(781): CodeIgniter\Model->doInsert()
+#6 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(732): CodeIgniter\BaseModel->insert()
+#7 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/app/Controllers/Home.php(91): CodeIgniter\Model->insert()
+#8 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(934): App\Controllers\Home->save()
+#9 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-21 10:40:21 --> Column 'Therapeutic_Area' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(781): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Home.php(91): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->save()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 10:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-21 10:40:33 --> mysqli_sql_exception: Column 'Therapeutic_Area' cannot be null in /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/BaseModel.php(781): CodeIgniter\Model->doInsert()
+#6 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(732): CodeIgniter\BaseModel->insert()
+#7 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/app/Controllers/Home.php(91): CodeIgniter\Model->insert()
+#8 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(934): App\Controllers\Home->save()
+#9 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-21 10:40:33 --> Column 'Therapeutic_Area' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(781): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Home.php(91): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->save()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 10:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-21 10:40:54 --> mysqli_sql_exception: Column 'Therapeutic_Area' cannot be null in /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/BaseModel.php(781): CodeIgniter\Model->doInsert()
+#6 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/Model.php(732): CodeIgniter\BaseModel->insert()
+#7 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/app/Controllers/Home.php(91): CodeIgniter\Model->insert()
+#8 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(934): App\Controllers\Home->save()
+#9 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/u177344557/domains/xcriptech.com/public_html/trialvalue/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-21 10:40:54 --> Column 'Therapeutic_Area' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(781): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(732): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Home.php(91): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->save()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-21 10:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 10:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 12:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 12:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 12:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 13:00:59 --> CSRF token verified.
+INFO - 2023-07-21 13:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 13:01:12 --> CSRF token verified.
+INFO - 2023-07-21 13:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 13:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 14:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 14:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 14:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 17:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-21 17:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
